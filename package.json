@@ -20,9 +20,9 @@
     "dev": "bash -c \" npm run build && live-server --port=8848 ./build/ & gulp watch \"",
     "build": "gulp",
     "clean": "rm -rf ./build",
-    "release": "npm run build"
+    "release": "npm run build && rm -rf ../../demos/uoowuo.github.io/entra-test/* && cp -a ./build/* ../../demos/uoowuo.github.io/entra-test/ && echo release copied"
   },
   "keywords": [],
   "homepage": "https://github.com/uoowuo/entra-test/",
-  "version": "1.1.1"
+  "version": "1.1.2"
 }

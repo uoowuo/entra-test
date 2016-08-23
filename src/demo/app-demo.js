@@ -8,7 +8,7 @@
     // Get viewport element and create the scene in it, scaling it down on vertical screens
     const viewElement = document.getElementById("app-3d");
     var scaleFactor;
-    if(viewElement.clientWidth / viewElement.clientHeight < 1.2) {
+    if(viewElement.clientWidth / viewElement.clientHeight < 1) {
         scaleFactor = viewElement.clientWidth / viewElement.clientHeight;
     } else {
         scaleFactor = 1;
